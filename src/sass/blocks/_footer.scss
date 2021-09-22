@@ -1,0 +1,106 @@
+.footer {
+    width: 100%;
+    margin-top: 120px;
+    padding-top: 58px;
+    background-color: #2C2C2C;
+    &__wrapper {
+        width: 90%;
+        max-width: 1250px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;        
+    }
+    &__logo {
+        width: 145px;
+        height: 94px;
+        background: url('../img/footer/logo.png') center/cover no-repeat;
+    }
+    &__inform {
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+        color: #fff;
+    }
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        & div:first-child {
+            width: max-content;
+            position: absolute;
+            top: 0;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    &__link {
+        margin-bottom: 16px;
+        color: #fff;
+        &::first-letter {
+            text-transform: uppercase;
+        }
+        &:hover {
+            color:#fff;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__contacts {
+        justify-content: space-between;
+        & :nth-child(n) {
+            padding-left: 30px;
+        }
+        & :nth-child(1) {
+            padding-left: 0;
+        }
+    }
+    &__address, &__tel, &__email {
+        color: #fff;
+        &:hover {
+            color: #fff;
+        }
+
+    }
+    &__social {
+        & .wrapper {
+            min-width: 193px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__icon_contacts {
+        position: absolute;
+        left: 0;
+    }
+    & .icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+        color: #fff;
+        font-size: 19px;
+    }
+    &__divider {
+        margin-top: 60px;
+        height: 100%;
+        border: 1px solid #fff;
+        opacity: .1;
+    }
+    &__copyright {
+        margin-top: 24px;
+        padding-bottom: 33px;
+        text-align: center;
+        color: rgba(200, 200, 200, 0.5)
+    }
+
+}
+
+

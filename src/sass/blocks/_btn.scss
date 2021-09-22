@@ -1,0 +1,44 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 222px;
+    height: 71px;
+    font-style: normal;
+    font-weight: normal;    
+    cursor: pointer;
+    text-transform: uppercase;
+    &:hover {
+        text-decoration: none;
+        transition: background-color .6s, transform .2s;
+
+    }
+    &:active {
+        transform: scale(.95);    
+    }
+    &__arrow {
+        width: 40px;
+        text-align: center;
+        transition: padding .3s;
+    }
+}
+
+.btn_white {
+    background-color: #FFFFFF;
+    color: $gray1;
+}
+
+.btn_slider {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 7;
+}
+
+.btn_gray {
+    background-color: $gray1;
+    color: #fff;
+    &:hover {
+        color: #fff;
+    }
+}

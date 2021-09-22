@@ -1,0 +1,19 @@
+.contact-us {
+    margin-top: 120px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 22px;
+        flex-wrap: wrap;
+    }
+    &__img {
+        width: 100%;
+        max-width: 749px;
+        background: url('../img/contact_us/image.png') center /cover no-repeat;
+    }
+    &__btn {
+        margin-top: 77px;
+        border: none;
+    }
+    
+}

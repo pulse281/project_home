@@ -1,0 +1,3 @@
+@function img-width($n) {
+    @return ($n - 30) / 2;
+}

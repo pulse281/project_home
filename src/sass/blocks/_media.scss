@@ -1,0 +1,277 @@
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+    h2 {
+        text-align: center;
+    }
+    .header {
+        &__wrapper {
+            justify-content: space-between;
+        }
+        &__logo {
+           margin-left: 5%;
+        }
+        &__item {
+            margin-right: 30px;
+        }
+    }
+    .slider {
+        &__info {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__item {
+            font-size: 48px;
+            line-height: 48px;
+        }
+        & .wrapper-controls {
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+        &__counter {
+            margin: 20px auto 0;
+            width: 70%;
+        }
+    }
+    .about-us {
+        & .container {
+            display: flex;
+        }
+        margin-top: 60px;
+        &__wrapper {
+            margin: 0;
+            margin-left: 10%;
+        }
+        &__images {
+           position: relative;
+           width: 150px;
+           flex-grow: 1;
+           top: 0 !important;
+           left: 0 !important;
+            &:nth-child(2) {
+                align-self: center;
+            }
+            &:nth-child(3) {
+                display: none;
+            }
+            &:nth-child(4) {
+                align-self: center;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+    }
+    .tasks {
+        margin-top: 60px;
+        &__wrapper {
+            margin: 3% 5% 0;
+        }
+        &__item {
+            & div:nth-child(1) {
+                font-size: 150px;
+            }
+            & div:nth-child(2) {
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+    }
+    .projects {
+        margin-top: 60px;
+        &__album {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__btn {
+            margin: 0 auto;
+        }
+    }
+    .contact-us {
+        margin-top: 60px;
+        &__wrapper {
+            justify-content: center;
+        }
+        &__img {
+            display: none;
+        }
+        &__btn {
+            margin: 77px auto 0;
+        }
+    }
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        &__inform {
+            flex-direction: column;
+            width: 80%;
+
+        }
+        &__item {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        &__contacts {
+            font-size: 12px;
+            & :nth-child(n) {
+                padding-left: 0;
+            }
+        }
+        &__icon_contacts {
+            display: none !important;
+        }
+
+    }
+}
+@media (min-width: 1023px) {
+    .btn_white {
+        &:hover {
+        color: #fff;
+        background-color: $gray1;
+        }
+    }
+    .btn_gray {
+        &:hover {
+            color: $gray1;
+            background-color: #fff;
+            border: 2px solid $gray1;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+
+    h2{
+        font-size: 38px;
+    }
+    .header {
+        &__menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: -100vw;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, .9);
+            border-right: 1px solid rgba(51, 51, 51, .5);
+            z-index: 9;
+        }
+        &__menu-layout {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -100vw;
+            width: 100vw;
+            height: 100vh;
+            background-color: transparent;
+            z-index: 1;
+        }
+        &__menu_active {
+            left: 0;
+        }
+        &__item {
+            margin: 0;
+            margin-bottom: 10px;
+            padding: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover {
+                border: none;
+            }
+        }
+    }
+    .hamburger {
+        display: flex;
+    }
+    .slider {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            font-size: 32px;
+        }
+        &__images {
+            width: 100%;
+        }
+        & .wrapper-controls {
+            position: absolute;
+            margin: 0;
+            bottom: -120px;
+        }
+        &__counter {
+            position: absolute;
+            margin: 0;
+            bottom: -60px;
+            width: 30%;
+        }
+        &__arrow:hover {
+            background: none;
+        }
+        &__arrow:active {
+            background-color: #F9F9F9;
+        }
+    }
+    .about-us {
+        margin-top: 140px;
+        &__wrapper {
+            margin: 0 5%;
+            max-width: none;
+        }
+        &__images {
+           display: none;
+        }
+    }
+    .tasks {
+        margin-top: 30px;
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__item {
+            width: auto !important;
+            & div:nth-child(1) {
+                margin-right: 10px;
+                font-size: 100px;
+                line-height: 100px;
+            }
+            & div:nth-child(2) {
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+    }
+    .projects {
+        &__title {
+            font-size: 38px;
+        }
+    }
+    .footer {
+        &__inform {
+            width: 97%;
+        }
+        &__item {
+            flex-wrap: wrap;
+        }
+        &__address, &__clock, &__tel, &__email {
+            margin-bottom: 16px;
+        }
+        &__link:last-child {
+            margin-bottom: 16px;
+        }
+
+    }
+}

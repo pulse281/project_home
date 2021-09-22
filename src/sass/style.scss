@@ -1,0 +1,28 @@
+@import 'libs/bootstrap-reboot.min';
+@import '../css/fonts.css';
+@import 'assets/animate';
+
+body {
+    font-family: 'TT Hoves';
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@import './blocks/variables';
+@import './blocks/functions';
+@import './blocks/header';
+@import './blocks/btn';
+@import './blocks/slider';
+@import './blocks/about-us';
+@import './blocks/tasks';
+@import './blocks/projects';
+@import './blocks/contact-us';
+@import './blocks/form';
+@import './blocks/footer';
+
+@import './blocks/media';
+
+

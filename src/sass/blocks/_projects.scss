@@ -1,0 +1,97 @@
+.projects {
+    margin-top: 120px;
+    &__album {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 255px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        &:nth-child(1) {
+            background-image: url('../img/projects/project_1.png');
+            width: 100%;
+            max-width: 570px;
+        }
+        &:nth-child(2) {
+            background-image: url('../img/projects/project_2.png');
+            width: 100%;
+            max-width: 570px;
+        }
+        &:nth-child(3) {
+            background-image: url('../img/projects/project_3.png');
+            width: 100%;
+            max-width: 270px;
+        }
+        &:nth-child(4) {
+            background-image: url('../img/projects/project_4.png');
+            width: 100%;
+            max-width: 470px;
+        }
+        &:nth-child(5) {
+            background-image: url('../img/projects/project_5.png');
+            width: 100%;
+            max-width: 370px;
+        }
+    }
+    &__item_link {
+        position: relative;
+        text-transform: uppercase;
+        color: #fff;
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &__title {
+        font-size: 64px;
+        line-height: 64px;
+        font-weight: bold;
+    }
+    &__more {
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.2em;
+        margin-top: 14px;
+    }
+    &__item-wrapper {
+        position: absolute;
+        width: auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    & .curtain {
+        width: 100%;
+        height: 100%;
+        background: $gray1;
+        opacity: .8;
+        transition: opacity 1s;
+    }
+    &__btn {
+        margin-left: auto;
+    }
+
+}
+.modalImg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(51, 51, 51, .8);
+    transform: scale(1.3);
+    z-index: 1;
+    & img {
+        z-index: 2;
+    }
+
+}

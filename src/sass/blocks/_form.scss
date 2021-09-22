@@ -1,0 +1,75 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-width: 391px;
+    min-width: 250px;
+    position: relative;
+    &__item {
+        margin-bottom: 10px;
+        background-color: #F3F3F3;
+        border: none;
+        height: 46px;
+        padding-left: 21px;
+        padding-right: 21px;
+        color: $gray1;
+        &::placeholder {
+            color: #8D8D8D;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+    }
+    &__item_textArea {
+        min-height: 147px;
+        padding-top: 14px;
+        resize: none;
+        &::placeholder {
+        line-height: 24px;
+        }
+    }
+    &__descr {
+        position: absolute;
+        bottom: -36px;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 309px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $gray1;
+        cursor: pointer;
+    }
+    &__check {
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 72px;
+        left: 5px;
+        &::before {
+            content: '';
+            display: block;
+            background: url('../img/contact_us/checkmark.svg') center/cover no-repeat;
+            height: 15px;
+            width: 15px;
+        }
+    }
+    &__thanks-message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 10px;
+        background-color: #fff;
+        border: 2px solid $gray1;
+    }
+}
